@@ -1,0 +1,10 @@
+{
+	"按钮注册": {
+	"scope": "lua",
+	"prefix": "code_btnOnClick",
+	"body": [
+		"self.BtnClick.onClick:Add(Bind(self, self.OnBtnClick))"
+	],
+	"description": "code_btnOnClick 按钮注册"
+	}
+}

@@ -1,0 +1,40 @@
+{
+  "name": "code-tool",
+  "displayName": "Code-Tool",
+  "description": "用于实现对应插件中定义的代码判断调用",
+  "keywords": ["codetool", "code", "tool"],
+  "version": "1.0.0",
+  "publisher": "Jia9m",
+  "engines": {
+    "vscode": "^1.97.0"
+  },
+  "categories": [
+    "Snippets"
+  ],
+  "activationEvents": [],
+  "main": "./src/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "extension.showWebview",
+        "title": "ShowSnippets"
+      }
+    ]
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "npm run lint",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.97.0",
+    "@types/mocha": "^10.0.10",
+    "@types/node": "20.x",
+    "eslint": "^9.21.0",
+    "@vscode/test-cli": "^0.0.10",
+    "@vscode/test-electron": "^2.4.1"
+  },
+  "propose-api": [
+    "inlineCompletionsAdditions"
+  ]
+}
